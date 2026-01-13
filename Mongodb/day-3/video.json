@@ -1,0 +1,203 @@
+[
+    {
+      "title": "Understanding JavaScript Closures",
+      "content": "Closures are a fundamental concept in JavaScript...",
+      "author": "John Doe",
+      "comments": [
+        { "user": "user1", "text": "Great explanation!" },
+        { "user": "user2", "text": "Really helpful, thanks!" }
+      ],
+      "metadata": { "likes": 45, "views": 1200 }
+    },
+    {
+      "title": "A Guide to Async/Await in Node.js",
+      "content": "Async/await simplifies working with asynchronous code...",
+      "author": "Jane Smith",
+      "comments": [
+        { "user": "user3", "text": "This made async concepts so clear!" },
+        { "user": "user4", "text": "Loved the examples provided." }
+      ],
+      "metadata": { "likes": 67, "views": 1500 }
+    },
+    {
+      "title": "Exploring MongoDB Aggregations",
+      "content": "MongoDB aggregations allow for powerful data processing...",
+      "author": "Alice Johnson",
+      "comments": [
+        { "user": "user5", "text": "Just what I needed to understand aggregations." },
+        { "user": "user6", "text": "Can you explain stages in more detail?" }
+      ],
+      "metadata": { "likes": 78, "views": 1800 }
+    },
+    {
+      "title": "CSS Grid vs. Flexbox",
+      "content": "Both CSS Grid and Flexbox have their use cases...",
+      "author": "Mark Brown",
+      "comments": [
+        { "user": "user7", "text": "Finally understood when to use Grid!" },
+        { "user": "user8", "text": "Can you add more examples?" }
+      ],
+      "metadata": { "likes": 89, "views": 2200 }
+    },
+    {
+      "title": "React State Management with Redux",
+      "content": "Redux is a popular state management library for React...",
+      "author": "Emily Davis",
+      "comments": [
+        { "user": "user9", "text": "Redux feels easier after this!" },
+        { "user": "user10", "text": "Thank you for simplifying Redux concepts." }
+      ],
+      "metadata": { "likes": 102, "views": 2400 }
+    },
+    {
+      "title": "Python vs. JavaScript: A Comparison",
+      "content": "Python and JavaScript are two of the most popular languages...",
+      "author": "Chris Wilson",
+      "comments": [
+        { "user": "user11", "text": "This was an interesting read." },
+        { "user": "user12", "text": "Which one do you prefer?" }
+      ],
+      "metadata": { "likes": 55, "views": 1300 }
+    },
+    {
+      "title": "Building APIs with Express.js",
+      "content": "Express.js is a minimal and flexible Node.js framework...",
+      "author": "Laura Green",
+      "comments": [
+        { "user": "user13", "text": "Love this guide on Express APIs!" },
+        { "user": "user14", "text": "Could you cover authentication next?" }
+      ],
+      "metadata": { "likes": 74, "views": 1900 }
+    },
+    {
+      "title": "The Basics of Responsive Web Design",
+      "content": "Responsive web design ensures your site looks great on any device...",
+      "author": "Peter White",
+      "comments": [
+        { "user": "user15", "text": "The examples were so clear!" },
+        { "user": "user16", "text": "Can you write about accessibility next?" }
+      ],
+      "metadata": { "likes": 88, "views": 2100 }
+    },
+    {
+      "title": "Mastering Git: Essential Commands",
+      "content": "Git is a distributed version control system...",
+      "author": "Sarah Adams",
+      "comments": [
+        { "user": "user17", "text": "This was super helpful for beginners." },
+        { "user": "user18", "text": "I still get confused with rebase." }
+      ],
+      "metadata": { "likes": 96, "views": 2500 }
+    },
+    {
+      "title": "Understanding the Virtual DOM in React",
+      "content": "The Virtual DOM is a key concept in React...",
+      "author": "Michael Lee",
+      "comments": [
+        { "user": "user19", "text": "This cleared up so many doubts!" },
+        { "user": "user20", "text": "Great visuals in your explanations." }
+      ],
+      "metadata": { "likes": 105, "views": 3000 }
+    },
+    {
+      "title": "Deep Dive into Node.js Streams",
+      "content": "Streams in Node.js handle data efficiently...",
+      "author": "Anna Brown",
+      "comments": [
+        { "user": "user21", "text": "Finally understand streams now!" },
+        { "user": "user22", "text": "Can you do one on event emitters?" }
+      ],
+      "metadata": { "likes": 65, "views": 1700 }
+    },
+    {
+      "title": "Why Learn TypeScript in 2025?",
+      "content": "TypeScript adds static typing to JavaScript...",
+      "author": "David Clark",
+      "comments": [
+        { "user": "user23", "text": "TS feels worth learning now." },
+        { "user": "user24", "text": "Loved the pros/cons breakdown!" }
+      ],
+      "metadata": { "likes": 95, "views": 2900 }
+    },
+    {
+      "title": "Automating Tasks with Python Scripts",
+      "content": "Python is an excellent choice for task automation...",
+      "author": "Ella Thomas",
+      "comments": [
+        { "user": "user25", "text": "This was so practical, thank you!" },
+        { "user": "user26", "text": "Can you suggest libraries for automation?" }
+      ],
+      "metadata": { "likes": 85, "views": 2100 }
+    },
+    {
+      "title": "Introduction to GraphQL",
+      "content": "GraphQL is a powerful alternative to REST APIs...",
+      "author": "Oscar Baker",
+      "comments": [
+        { "user": "user27", "text": "Great intro to GraphQL!" },
+        { "user": "user28", "text": "Would love to see advanced topics too." }
+      ],
+      "metadata": { "likes": 78, "views": 2000 }
+    },
+    {
+      "title": "Top 10 VS Code Extensions for Developers",
+      "content": "VS Code extensions boost productivity significantly...",
+      "author": "Sophia Harris",
+      "comments": [
+        { "user": "user29", "text": "Already installed a few!" },
+        { "user": "user30", "text": "Suggestions were spot on." }
+      ],
+      "metadata": { "likes": 120, "views": 3200 }
+    },
+    {
+      "title": "Debugging JavaScript Effectively",
+      "content": "Debugging is an essential skill for JavaScript developers...",
+      "author": "Jack Evans",
+      "comments": [
+        { "user": "user31", "text": "Thanks for the detailed steps!" },
+        { "user": "user32", "text": "I always struggled with breakpoints." }
+      ],
+      "metadata": { "likes": 85, "views": 2600 }
+    },
+    {
+      "title": "REST vs. GraphQL: Which to Choose?",
+      "content": "Both REST and GraphQL have their strengths and weaknesses...",
+      "author": "Grace Miller",
+      "comments": [
+        { "user": "user33", "text": "The comparison was so clear." },
+        { "user": "user34", "text": "Can you cover microservices next?" }
+      ],
+      "metadata": { "likes": 112, "views": 3100 }
+    },
+    {
+      "title": "Understanding Promises in JavaScript",
+      "content": "Promises are used to handle asynchronous operations...",
+      "author": "James Wright",
+      "comments": [
+        { "user": "user35", "text": "I finally get promises now!" },
+        { "user": "user36", "text": "Would love to see chaining examples." }
+      ],
+      "metadata": { "likes": 70, "views": 2200 }
+    },
+    {
+      "title": "How to Use the Fetch API",
+      "content": "The Fetch API provides an easy way to make HTTP requests...",
+      "author": "Olivia Lewis",
+      "comments": [
+        { "user": "user37", "text": "I use fetch all the time now." },
+        { "user": "user38", "text": "Can you explain CORS in detail?" }
+      ],
+      "metadata": { "likes": 90, "views": 2300 }
+    },
+    {
+      "title": "What’s New in ES2025?",
+      "content": "ES2025 introduces exciting new features...",
+      "author": "Liam Robinson",
+      "comments": [
+        { "user": "user39", "text": "Looking forward to trying the new features!" },
+        { "user": "user40", "text": "Can you do a deep dive into pipelines?" }
+      ],
+      "metadata": { "likes": 150, "views": 4000 }
+    }
+  ]
+  
