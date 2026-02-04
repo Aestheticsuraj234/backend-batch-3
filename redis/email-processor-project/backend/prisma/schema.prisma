@@ -1,0 +1,30 @@
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Batch {
+  id   String  @id @default(cuid())
+  filename String
+  totalEmails Int @map("total_emails")
+  insertedCount Int @default(0) @map("inserted_count")
+  status  String  @default("pending") //pending | processing | queued | completed | failed
+  createdAt DateTime  @default(now()) @map("created_at")
+  completedAt DateTime? @map("completed_at")
+
+  emails Email[]
+}
+
+model Email {
+   id   String  @id @default(cuid())
+   batchId String @map("batch_id")
+   email String
+   createdAt DateTime @default(now()) @map("created_at")
+
+   batch Batch  @relation(fields: [batchId] , references: [id] , onDelete: Cascade)
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Batch Processor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Email Batch Processor</h1>
+      <p>Upload a CSV with one email per line to process in the background.</p>
+    </header>
+
+    <div class="worker-tip" role="note">
+      <strong>Status stays &quot;pending&quot;?</strong> Run the worker in a second terminal: <code>cd backend && npm run worker</code> (Redis must be running).
+    </div>
+
+    <section class="upload-section">
+      <h2>Upload CSV</h2>
+      <p class="hint">CSV should contain only emails (one per line or one column).</p>
+      <form id="upload-form">
+        <input type="file" id="file" name="file" accept=".csv" required />
+        <button type="submit" id="upload-btn">Upload & Process</button>
+      </form>
+      <p id="upload-message" class="message"></p>
+    </section>
+
+    <section class="status-section" id="status-section" hidden>
+      <h2>Batch Status</h2>
+      <div id="status-card" class="status-card">
+        <p><strong>Batch:</strong> <span id="batch-filename">-</span></p>
+        <p><strong>Status:</strong> <span id="batch-status">-</span></p>
+        <p><strong>Progress:</strong> <span id="batch-progress">0 / 0</span></p>
+        <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+      </div>
+    </section>
+
+    <section class="batches-section">
+      <h2>Recent Batches</h2>
+      <div id="batches-list" class="batches-list">Loading…</div>
+      <button type="button" id="refresh-btn">Refresh list</button>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

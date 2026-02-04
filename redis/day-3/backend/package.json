@@ -1,0 +1,27 @@
+{
+  "name": "email-processor-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "worker": "node src/worker.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.0.0",
+    "@prisma/client": "^7.3.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "ioredis": "^5.4.1",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.0.0"
+  }
+}

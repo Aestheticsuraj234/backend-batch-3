@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "worker": "node src/worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.3.0",
+    "@prisma/client": "^7.3.0",
+    "cors": "^2.8.6",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ioredis": "^5.9.2",
+    "multer": "^2.0.2",
+    "pg": "^8.18.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.3.0"
+  }
+}
