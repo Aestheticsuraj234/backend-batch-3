@@ -1,0 +1,52 @@
+{
+  "id": "two-sum",
+  "title": "Two Sum",
+  "category": "array",
+  "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.",
+  "difficulty": "EASY",
+  "tags": ["Array", "Hash Table"],
+  "constraints": "2 <= nums.length <= 10^4\n-10^9 <= nums[i] <= 10^9\n-10^9 <= target <= 10^9\nOnly one valid answer exists.",
+  "hints": "Consider using a hash map to store the numbers you've seen so far and their indices. For each number, check if its complement (target - number) already exists in the map.",
+  "editorial": "A brute force approach checks all pairs in O(n^2). The optimal solution uses a hash map to store each number's index as we iterate, checking in O(1) whether the complement exists. This gives us O(n) time and O(n) space.",
+  "testCases": [
+    {
+      "input": "2 7 11 15\n9",
+      "output": "0 1"
+    },
+    {
+      "input": "3 2 4\n6",
+      "output": "1 2"
+    },
+    {
+      "input": "3 3\n6",
+      "output": "0 1"
+    }
+  ],
+  "examples": {
+    "JAVASCRIPT": {
+      "input": "nums = [2, 7, 11, 15], target = 9",
+      "output": "[0, 1]",
+      "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+    },
+    "PYTHON": {
+      "input": "nums = [2, 7, 11, 15], target = 9",
+      "output": "[0, 1]",
+      "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+    },
+    "JAVA": {
+      "input": "nums = [2, 7, 11, 15], target = 9",
+      "output": "[0, 1]",
+      "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+    }
+  },
+  "codeSnippets": {
+    "JAVASCRIPT": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nfunction twoSum(nums, target) {\n  // Write your code here\n}\n\nconst readline = require('readline');\nconst rl = readline.createInterface({\n  input: process.stdin,\n  output: process.stdout,\n  terminal: false\n});\n\nconst lines = [];\nrl.on('line', (line) => lines.push(line.trim()));\nrl.on('close', () => {\n  const nums = lines[0].split(' ').map(Number);\n  const target = parseInt(lines[1]);\n  const result = twoSum(nums, target);\n  console.log(result.join(' '));\n});",
+    "PYTHON": "class Solution:\n    def twoSum(self, nums: list[int], target: int) -> list[int]:\n        # Write your code here\n        pass\n\nif __name__ == \"__main__\":\n    import sys\n    lines = sys.stdin.read().splitlines()\n    nums = list(map(int, lines[0].split()))\n    target = int(lines[1])\n    sol = Solution()\n    result = sol.twoSum(nums, target)\n    print(' '.join(map(str, result)))",
+    "JAVA": "import java.util.Scanner;\n\npublic class Main {\n    public static int[] twoSum(int[] nums, int target) {\n        // Write your code here\n        return new int[]{};\n    }\n\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String[] parts = sc.nextLine().trim().split(\" \");\n        int[] nums = new int[parts.length];\n        for (int i = 0; i < parts.length; i++) nums[i] = Integer.parseInt(parts[i]);\n        int target = sc.nextInt();\n        int[] result = twoSum(nums, target);\n        System.out.println(result[0] + \" \" + result[1]);\n        sc.close();\n    }\n}"
+  },
+  "referenceSolutions": {
+    "JAVASCRIPT": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nfunction twoSum(nums, target) {\n  const map = new Map();\n  for (let i = 0; i < nums.length; i++) {\n    const complement = target - nums[i];\n    if (map.has(complement)) {\n      return [map.get(complement), i];\n    }\n    map.set(nums[i], i);\n  }\n  return [];\n}\n\nconst readline = require('readline');\nconst rl = readline.createInterface({\n  input: process.stdin,\n  output: process.stdout,\n  terminal: false\n});\n\nconst lines = [];\nrl.on('line', (line) => lines.push(line.trim()));\nrl.on('close', () => {\n  const nums = lines[0].split(' ').map(Number);\n  const target = parseInt(lines[1]);\n  const result = twoSum(nums, target);\n  console.log(result.join(' '));\n});",
+    "PYTHON": "class Solution:\n    def twoSum(self, nums: list[int], target: int) -> list[int]:\n        seen = {}\n        for i, num in enumerate(nums):\n            complement = target - num\n            if complement in seen:\n                return [seen[complement], i]\n            seen[num] = i\n        return []\n\nif __name__ == \"__main__\":\n    import sys\n    lines = sys.stdin.read().splitlines()\n    nums = list(map(int, lines[0].split()))\n    target = int(lines[1])\n    sol = Solution()\n    result = sol.twoSum(nums, target)\n    print(' '.join(map(str, result)))",
+    "JAVA": "import java.util.HashMap;\nimport java.util.Map;\nimport java.util.Scanner;\n\npublic class Main {\n    public static int[] twoSum(int[] nums, int target) {\n        Map<Integer, Integer> map = new HashMap<>();\n        for (int i = 0; i < nums.length; i++) {\n            int complement = target - nums[i];\n            if (map.containsKey(complement)) {\n                return new int[]{map.get(complement), i};\n            }\n            map.put(nums[i], i);\n        }\n        return new int[]{};\n    }\n\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        String[] parts = sc.nextLine().trim().split(\" \");\n        int[] nums = new int[parts.length];\n        for (int i = 0; i < parts.length; i++) nums[i] = Integer.parseInt(parts[i]);\n        int target = sc.nextInt();\n        int[] result = twoSum(nums, target);\n        System.out.println(result[0] + \" \" + result[1]);\n        sc.close();\n    }\n}"
+  }
+}
