@@ -10,6 +10,16 @@ export function getLanguageId(language) {
   return languageMap[language.toUpperCase()];
 }
 
+export function getLanguageName(languageId) {
+  const languageMap = {
+    71: "PYTHON",
+    63: "JAVASCRIPT",
+    62: "JAVA",
+  };
+
+  return languageMap[languageId];
+}
+
 const headers = {
   "x-rapidapi-key": "3166d1d72bmshf458b4989d7b908p1872e3jsn04b09e3750dc",
   "x-rapidapi-host": "judge029.p.rapidapi.com",
