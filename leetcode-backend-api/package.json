@@ -1,10 +1,9 @@
 {
   "name": "leetcode-backend-api",
   "version": "1.0.0",
-
   "main": "src/index.js",
   "scripts": {
-   "dev":"nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "backend",
@@ -19,6 +18,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.4.2",
     "@prisma/client": "^7.4.2",
+    "axios": "^1.13.6",
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
