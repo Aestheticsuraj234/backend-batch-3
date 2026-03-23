@@ -1,16 +1,9 @@
-import app from './app';
-import express from 'express';
-import { mountBetterAuth } from './lib/mountBetterAuth';
+import express from "express";
 
-const PORT = process.env.PORT || 5000;
 
-(async () => {
-  await mountBetterAuth(app);
+const app = express();
+const PORT = 8080;
 
-  // Mount after Better Auth handler.
-  app.use(express.json());
-
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-})();
+app.listen(PORT , ()=>{
+    console.log(`Server running on http://localhost:${PORT}`)
+})

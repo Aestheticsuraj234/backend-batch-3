@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1773984017335,
-      "tag": "0000_fast_millenium_guard",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1773985464173,
-      "tag": "0001_unique_plazm",
+      "when": 1774280223529,
+      "tag": "0000_chemical_the_leader",
       "breakpoints": true
     }
   ]
