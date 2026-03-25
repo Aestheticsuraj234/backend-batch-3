@@ -8,6 +8,20 @@
       "when": 1774280223529,
       "tag": "0000_chemical_the_leader",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1774422996370,
+      "tag": "0001_fearless_valkyrie",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1774425850452,
+      "tag": "0002_cool_squirrel_girl",
+      "breakpoints": true
     }
   ]
 }
