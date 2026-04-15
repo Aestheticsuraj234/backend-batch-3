@@ -3,6 +3,7 @@ import {db} from "../db/index.js"
 import { message, project } from "../db/schema.js";
 import { randomUUID } from "node:crypto";
 import { generateSlug } from "random-word-slugs";
+import { inngest } from "../integrations/inngest/client.js";
 
 
 export const createProject = async(req:Request , res:Response)=>{
@@ -25,7 +26,15 @@ export const createProject = async(req:Request , res:Response)=>{
         projectId:newProject.id
     });
 
-    // todo: background job trigger
+
+    await inngest.send({
+        name:"code-agent/run",
+        data:{
+            projectId:newProject.id,
+            value:content
+        }
+    })
+    
 
     return res.status(201).json(newProject)
 }

@@ -6,7 +6,7 @@ import { serve } from "inngest/express";
 
 import { auth } from "./lib/auth.js";
 import projectRoutes from "./routes/project.routes.js";
-import { inngest, functions } from "./integrations/inngest/index.js";
+import { inngest , functions} from "./integrations/inngest/index.js";
 import cors from "cors";
 
 const app = express();
